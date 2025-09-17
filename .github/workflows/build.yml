@@ -65,7 +65,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: release-${{ env.BUILD_TIMESTAMP }}
+        #tag_name: release-${{ env.BUILD_TIMESTAMP }}
+        tag_name: ${{ env.NOW }}
         release_name: Padavan ASUS RT-N56U LITE (${{ env.BUILD_TIMESTAMP }})
         body: |
           О прошивке
